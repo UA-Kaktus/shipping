@@ -15,7 +15,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(scss|sass)")
+    return gulp.src("src/sass/*.+(scss|sass)")
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({
         prefix: "",
@@ -46,8 +46,9 @@ gulp.task('html', function() {
     .pipe(browserSync.stream());
 });
 
+//here i need to add Webpack to convert "script.js" and all modules into single "bundle.js"
 gulp.task('scripts', function() {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src('src/js/*.js')
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.stream());
 });
