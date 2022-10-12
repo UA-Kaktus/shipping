@@ -29,8 +29,18 @@ body {
         font-size: 16px;
     }
 }
+.divider-orange {
+    display: block;
+    margin: 15px auto;
+    width: 150px;
+    height: 2px;
+    background-color: var(--color-acent);
+}
 
-
+@import 'blocks/mobile-menu.scss';
 @import 'blocks/promo.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/our-work.scss';
+
 @import 'base/media.scss';
 
