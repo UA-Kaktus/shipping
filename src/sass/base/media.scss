@@ -27,6 +27,17 @@
             width: 300px;
         }
     }
+    .price {
+        &__main {
+            grid-template-columns: repeat(2, 1fr);
+            width: 700px;
+            gap: 40px;
+            margin: 35px auto 0 auto;
+        }
+        &__item {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -71,8 +82,25 @@
             width: 32%;
         }
     }
-    .agent {
+    .agent, .managers {
         padding: 50px 0;
+    }
+    .price {
+        &__form {
+            margin: 70px auto 0 auto;
+            width: 700px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 65px 10px 50px 10px;
+            input {
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+        &__text {
+            width: 300px;
+            padding-right: 15px;
+        }
     }
 }
 
@@ -119,9 +147,99 @@
             font-size: 12px;
         }
     }
+    .price {
+        padding: 30px 0 45px 0;
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__main {
+            width: 540px;
+            gap: 20px;
+        }
+        &__consult {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        &__form {
+            margin: 50px auto 0 auto;
+            width: 340px;
+            grid-template-columns: 260px;
+            row-gap: 10px;
+            padding: 55px 10px 50px 10px;
+            &-icon {
+                width: 80px;
+                height: 80px;
+            }
+            .orange-btn {
+                width: 200px;
+            }
+        }
+    }
+    .review {
+        &__wrapper {
+            width: 450px;
+        }
+        &__item {
+            width: 300px;
+            &_active {
+                left: 75px;
+                margin-right: 150px;
+            }
+            &-name {
+                font-size: 14px;
+            }
+            &-text {
+                font-size: 12px;
+            }
+        }
+        &__slyder {
+            left: -330px;
+        }
+    }
+    .question {
+        &__form {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__main {
+            grid-template-columns: 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+        }
+    }
+    .footer {
+        &__top-block {
+            justify-content: center;
+        }
+        &__text {
+            display: none;
+        }
+        &__logo {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 576px) {
+    .modal {
+        &__wrapper {
+            width: 300px;
+            padding: 30px 10px;
+        }
+        &__title {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16px;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
     .promo {
         &__descr {
             font-size: 16px;
@@ -187,7 +305,7 @@
             }
         }
     }
-    .agent {
+    .agent, .managers {
         padding: 30px 0;
         &__icon {
             width: 80px;
@@ -201,5 +319,58 @@
             width: 80%;
         }
     }
-    
+    .shema {
+        padding: 30px 0;
+    }
+    .price {
+        &__main {
+            grid-template-columns: 1fr;
+            width: 300px;
+        }
+        &__form {
+            width: 300px;
+        }
+    }
+    .review {
+        padding: 30px 0;
+        &__wrapper {
+            width: 270px;
+        }
+        &__item {
+            width: 180px;
+            &_active {
+                left: 45px;
+                margin-right: 90px;
+            }
+            &-name {
+                font-size: 12px;
+            }
+            &-text {
+                font-size: 8px;
+            }
+        }
+        &__slyder {
+            left: -210px;
+        }
+    }
+    .question {
+        padding: 30px 0;
+        &__form {
+            width: 300px;
+        }
+        &__main {
+            padding: 15px 10px;
+        }
+    }
+    .footer {
+        &__top-block {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        &__bot-block {
+            flex-direction: column;
+            row-gap: 5px;
+        }
+    }
 }

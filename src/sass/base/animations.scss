@@ -1,0 +1,53 @@
+@keyframes leftSwipe {
+    0% {
+        transform: translateX(0) scale(150%);
+    }
+    40% {
+        transform: translateX(15px) scale(150%);
+    }
+    80% {
+        transform: translateX(-10px) scale(150%);
+    }
+    100% {
+        transform: translateX(0) scale(150%);
+    }
+}
+
+@keyframes rightSwipe {
+    0% {
+        transform: translateX(0) scale(150%);
+    }
+    40% {
+        transform: translateX(-15px) scale(150%);
+    }
+    80% {
+        transform: translateX(10px) scale(150%);
+    }
+    100% {
+        transform: translateX(0) scale(150%);
+    }
+}
+
+@keyframes nav_hover {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: calc(100% - 24px);
+    }
+}
+
+@keyframes mobile_nav_hover {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

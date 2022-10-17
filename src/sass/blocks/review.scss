@@ -1,0 +1,89 @@
+.review {
+    padding: 50px 0;
+    overflow: hidden;
+    &__title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__descr {
+        color: #535353;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        position: relative;
+        width: 600px;
+        margin: 30px auto 0 auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__slyder {
+        display: flex;
+        gap: 30px;
+        position: relative;
+        left: -430px;
+        transition: all .8s;
+    }
+    &__item {
+        width: 400px;
+        opacity: .3;
+        &-img img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+        &-name {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10px;
+        }
+        &-text {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+        &_active {
+            transition: transform .8s;
+            transform: scale(150%);
+            left: 100px;
+            position: relative;
+            margin-right: 200px;
+            opacity: unset;
+            &-left {
+                animation: leftSwipe .4s linear 1;
+            }
+            &-right {
+                animation: rightSwipe .4s linear 1;
+            }
+        }
+    }
+    &__arrow-left {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        left: calc(50% - 100px - 14px);
+        top: 50px;
+        cursor: pointer;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__arrow-right {
+        position: absolute;
+        z-index: 1;
+        left: calc(50% + 100px);
+        top: 50px;
+        cursor: pointer;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

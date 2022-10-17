@@ -21,6 +21,7 @@
         font-size: 24px;
         margin-bottom: 10px;
         position: relative;
+        display: block;
         a {
             color: #fff;
             text-decoration: none;
@@ -35,6 +36,9 @@
             left: -25px;
             top: 10px;
             transform: rotate(45deg);
+        }
+        &:hover{
+            animation: mobile_nav_hover 1s linear infinite;
         }
     }
 }

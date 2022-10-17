@@ -14,12 +14,12 @@
     <div class="mobile-menu">
         <div class="mobile-menu__block">
             <ul class="mobile-menu__list">
-                <li class="mobile-menu__item"><a href="#">Переваги</a></li>
-                <li class="mobile-menu__item"><a href="#">Наша робота</a></li>
-                <li class="mobile-menu__item"><a href="#">Ціни</a></li>
-                <li class="mobile-menu__item"><a href="#">Схема роботи</a></li>
-                <li class="mobile-menu__item"><a href="#">Відгуки</a></li>
-                <li class="mobile-menu__item"><a href="#">Контакти</a></li>
+                <li class="mobile-menu__item"><a href="#advantages">Переваги</a></li>
+                <li class="mobile-menu__item"><a href="#our-work">Наша робота</a></li>
+                <li class="mobile-menu__item"><a href="#price">Ціни</a></li>
+                <li class="mobile-menu__item"><a href="#shema">Схема роботи</a></li>
+                <li class="mobile-menu__item"><a href="#review">Відгуки</a></li>
+                <li class="mobile-menu__item"><a href="#question">Контакти</a></li>
             </ul>
         </div>
         <!-- <div class="mobile-menu__close">&times;</div> -->
@@ -29,6 +29,24 @@
         <span></span>
         <span></span>
     </div>
+    <div class="modal">
+        <div class="modal__wrapper">
+            <form class="modal__form" action="#">
+                <h2 class="modal__title">Лишіть свої номер та ім'я</h2>
+                <div class="modal__subtitle">і ми зателефонуєм вам протягом 5 хвилин!</div>
+                <div class="modal__input">
+                    <input name="name" id="modal-name" type="text">
+                    <label for="modal-name">Ваше ім'я</label>
+                </div>
+                <div class="modal__input">
+                    <input name="phone" id="modal-phone" type="number">
+                    <label for="modal-phone">Номер телефону</label>
+                </div>
+                <button class="orange-btn">Відправити заявку</button>
+            </form>
+            <div class="modal__close">&times;</div>
+        </div>
+    </div>
     <section class="promo">
         <div class="container">
             <nav class="nav">
@@ -36,22 +54,22 @@
                     <img src="icons/glopt_logo.png" alt="logo">
                 </div>
                 <ul>
-                    <li class="nav__item"><a href="#">Переваги</a></li>
-                    <li class="nav__item"><a href="#">Наша робота</a></li>
-                    <li class="nav__item"><a href="#">Ціни</a></li>
-                    <li class="nav__item"><a href="#">Схема роботи</a></li>
-                    <li class="nav__item"><a href="#">Відгуки</a></li>
-                    <li class="nav__item"><a href="#">Контакти</a></li>
+                    <li class="nav__item"><a href="#advantages">Переваги</a></li>
+                    <li class="nav__item"><a href="#our-work">Наша робота</a></li>
+                    <li class="nav__item"><a href="#price">Ціни</a></li>
+                    <li class="nav__item"><a href="#shema">Схема роботи</a></li>
+                    <li class="nav__item"><a href="#review">Відгуки</a></li>
+                    <li class="nav__item"><a href="#question">Контакти</a></li>
                 </ul>
                 <div class="nav__info">
                     <div class="nav__question">З'явились питання?</div>
                     <div class="nav__phone"><a href="tel:+380669999999">+38(066)-99-99-999</a></div>
                 </div>
-                <button class="orange-btn">передзвоніть мені</button>
+                <button class="orange-btn" data-modal="modal-window">передзвоніть мені</button>
             </nav>
             <div class="promo__descr">Global Opt - логістика повного циклу з Китаю в Україну</div>
             <h1 class="promo__title">Доставка вантажів з Китаю</h1>
-            <div class="promo__subtitle">в україну всіми видами транспорту</div>
+            <div class="promo__subtitle">в україну всіма видами транспорту</div>
             <div class="promo__divider"></div>
             <div class="promo__triggers">
                 <div class="promo__triggers-item">
@@ -71,10 +89,10 @@
                     <div class="promo__triggers-descr">Експрес доставка 1-2 дні з Гуанчжоу до Києва від 25$/кг</div>
                 </div>
             </div>
-            <button class="orange-btn orange-btn_big">отримати розрахунок</button>
+            <button data-modal="modal-window" class="orange-btn orange-btn_big">отримати розрахунок</button>
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <h2 class="advantages__title">Переваги роботи з GLOBALOPT</h2>
             <div class="advantages__triggers">
@@ -137,7 +155,7 @@
             </div>
         </div>
     </section>
-    <section class="work">
+    <section class="work" id="our-work">
         <div class="container">
             <h2 class="work__title">Наша робота - більше ніж просто доставка</h2>
             <div class="divider-orange"></div>
@@ -168,7 +186,7 @@
             <div class="agent__descr">Україномовні клієнти з легкістью знайдуть необхідні товари в Китаї, враховуючи якість, ціну та інше.</div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="price__title">Ціни на будь-який варінт доставки</h2>
             <div class="divider-orange"></div>
@@ -180,7 +198,7 @@
                     <div class="price__item-deliver">доставка за 35-50 днів</div>
                     <div class="price__item-cost"> від 0,3$ за 1 кг</div>
                     <div class="price__item-descr">Морські перевезення вантажів з Китаю до України за 35 днім з проходженням митниці</div>
-                    <button class="orange-btn">детальніше</button>
+                    <button data-modal="modal-window" class="orange-btn">детальніше</button>
                 </div>
                 <div class="price__item">
                     <div class="price__item-title">Залізниця</div>
@@ -188,7 +206,7 @@
                     <div class="price__item-deliver">доставка за 15-30 днів</div>
                     <div class="price__item-cost"> від 1$ за 1 кг</div>
                     <div class="price__item-descr">Перевезення залізницею чеерез треті країни, від 2 тижнів.</div>
-                    <button class="orange-btn">детальніше</button>
+                    <button data-modal="modal-window" class="orange-btn">детальніше</button>
                 </div>
                 <div class="price__item">
                     <div class="price__item-title">Автомобілем</div>
@@ -196,7 +214,7 @@
                     <div class="price__item-deliver">доставка за 15-30 днів</div>
                     <div class="price__item-cost"> від 1$ за 1 кг</div>
                     <div class="price__item-descr">Перевезення вантажів з Китаю за допомогою авто, від 2 тижнів</div>
-                    <button class="orange-btn">детальніше</button>
+                    <button data-modal="modal-window" class="orange-btn">детальніше</button>
                 </div>
                 <div class="price__item">
                     <div class="price__item-title">Авіаперевезення</div>
@@ -204,7 +222,7 @@
                     <div class="price__item-deliver">доставка за 1-12 днів</div>
                     <div class="price__item-cost"> від 1$ за 1 кг</div>
                     <div class="price__item-descr">Перевезення вантажів з Китаю за допомогою літака, до 12 днів</div>
-                    <button class="orange-btn">детальніше</button>
+                    <button data-modal="modal-window" class="orange-btn">детальніше</button>
                 </div>
             </div>
             <div class="price__consult">Замовити безкоштовну консультацію</div>
@@ -215,12 +233,133 @@
                 <div class="price__form-button-wrapper">
                     <button class="orange-btn">відправити заявку</button>
                 </div>
-                <input name='name' placeholder="Ваше ім'я" type="text">
-                <input name="phone" placeholder="Ваш номер телефону" type="number">
-                <input name="mail" placeholder="Ваш e-mail.." type="email">
+                <input name='name' placeholder="Ваше ім'я" required type="text">
+                <input name="phone" placeholder="Ваш номер телефону" required type="number">
+                <input name="mail" placeholder="Ваш e-mail.." required type="email">
             </form>
         </div>
     </section>
+    <section class="managers">
+        <div class="container">
+            <div class="managers__icon"><img src="icons/managers_block.png" alt="managers"></div>
+            <h2 class="managers__title">Менеджери компанії</h2>
+            <div class="managers__descr">Підберуть для вас оптимальну схему вантажоперевезень. Проведуть контроль купівлі та організують прямі поставки від заводу виробника до вас на склад.</div>
+        </div>
+    </section>
+    <section class="shema" id="shema">
+        <div class="container">
+            <h2 class="shema__title">Схема роботи з нами</h2>
+            <div class="shema__wrapper">
+                <div class="shema__item">
+                    <img src="icons/sheme_1.png" alt="sheme 1" class="shema__item-img">
+                    <div class="shema__item-subtitle">Заявка</div>
+                    <div class="shema__item-descr">Ви лишаєте заявку у нас на сайті або телефонуєте нам</div>
+                </div>
+                <div class="shema__item">
+                    <img src="icons/sheme_2.png" alt="sheme 2" class="shema__item-img">
+                    <div class="shema__item-subtitle">Аналітика доставки</div>
+                    <div class="shema__item-descr">Ми прораховуємо варіанти доставки вашого вантажу</div>
+                </div>
+                <div class="shema__item">
+                    <img src="icons/sheme_3.png" alt="sheme 3" class="shema__item-img">
+                    <div class="shema__item-subtitle">Договір</div>
+                    <div class="shema__item-descr">Укладаємо з вами договір на доставку вантажу з Китаю</div>
+                </div>
+                <div class="shema__item">
+                    <img src="icons/sheme_4.png" alt="sheme 4" class="shema__item-img">
+                    <div class="shema__item-subtitle">Доставка на ваш склад</div>
+                    <div class="shema__item-descr">Зв'язуємось з вашим постачальником в Китаї та домовляємось про поставки вантажів на склад</div>
+                </div>
+                <div class="shema__item">
+                    <img src="icons/sheme_5.png" alt="sheme 5" class="shema__item-img">
+                    <div class="shema__item-subtitle">Перевірка вантажу</div>
+                    <div class="shema__item-descr">Ми перевіряємо, сбираємо та упаковуємо ваш вантаж у нас на складі</div>
+                </div>
+                <div class="shema__item">
+                    <img src="icons/sheme_6.png" alt="sheme 6" class="shema__item-img">
+                    <div class="shema__item-subtitle">Доставка вантажа</div>
+                    <div class="shema__item-descr">Ми перевозимо ваш вантаж до місця призначення та провоходимо митницю</div>
+                </div>
+                <div class="shema__item">
+                    <img src="icons/sheme_7.png" alt="sheme 7" class="shema__item-img">
+                    <div class="shema__item-subtitle">Оплата</div>
+                    <div class="shema__item-descr">Проводимо розрахунок на місці при отриманні вантажу</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="review">
+        <h2 class="review__title">Відгуки наших клієнтів</h2>
+        <div class="divider-orange"></div>
+        <div class="review__descr">Ми завжди намагаємось допомогти нашим клієнтам, щоб ви були задоволені</div>
+        <div class="review__wrapper">
+            <div class="review__arrow-left"><img src="icons/arrow_left.png" alt="left arrow"></div>
+            <div class="review__arrow-right"><img src="icons/arrow_right.png" alt="right arrow"></div>
+            <div class="review__slyder">
+                <div class="review__item">
+                    <div class="review__item-img"><img src="img/photo_2.jpg" alt="review 1"></div>
+                    <div class="review__item-name">Дмитро Іванов</div>
+                    <div class="review__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi aliquam optio temporibus suscipit qui iure labore aut, in, commodi aliquid ut ratione? Dolores, vero iure minus quaerat delectus animi.</div>
+                </div>
+                <div class="review__item review__item_active">
+                    <div class="review__item-img"><img src="img/rew_1.jpg" alt="review 2"></div>
+                    <div class="review__item-name">Анна Котова</div>
+                    <div class="review__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi aliquam optio temporibus suscipit qui iure labore aut, in, commodi aliquid ut ratione? Dolores, vero iure minus quaerat delectus animi.</div>
+                </div>
+                <div class="review__item">
+                    <div class="review__item-img"><img src="img/rew_1.jpg" alt="review 3"></div>
+                    <div class="review__item-name">Анна Собакова</div>
+                    <div class="review__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi aliquam optio temporibus suscipit qui iure labore aut, in, commodi aliquid ut ratione? Dolores, vero iure minus quaerat delectus animi.</div>
+                </div>
+                <div class="review__item">
+                    <div class="review__item-img"><img src="img/rew_1.jpg" alt="review 4"></div>
+                    <div class="review__item-name">Анна Кроликова</div>
+                    <div class="review__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi aliquam optio temporibus suscipit qui iure labore aut, in, commodi aliquid ut ratione? Dolores, vero iure minus quaerat delectus animi.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="question" id="question">
+        <div class="container">
+            <form action="#" class="question__form">
+                <div class="question__headline">
+                    <div class="question__headline-title">Залишились питання?</div>
+                    <div class="question__headline-subtitle">Напишіть нам!</div>
+                </div>
+                <div class="question__main">
+                    <input name="name" placeholder="Ваше ім'я" type="text" class="question__input">
+                    <input name="phone" placeholder="Ваш номер телефону" type="number" class="question__input">
+                    <input name="mail" placeholder="Ваш e-mail" type="email" class="question__input">
+                    <textarea placeholder="Повідомлення" class="question__textarea" name="message"></textarea>
+                </div>
+                <button class="orange-btn">Відправить заявку</button>
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.6710147199!2d23.94219599196449!3d49.83266794937269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1665958818433!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top-block">
+                <div class="footer__logo">
+                    <img src="icons/glopt_logo.png" alt="logo">
+                </div>
+                <div class="footer__text">Доставка вантажів з Китаю до України та країн СНГ</div>
+                <div class="footer__info">
+                    <div class="footer__question">З'явились питання?</div>
+                    <div class="footer__phone"><a href="tel:+380669999999">+38(066)-99-99-999</a></div>
+                </div>
+                <button data-modal="modal-window" class="orange-btn">передзвоніть мені</button>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__bot-block">
+                <div class="footer__copyright">@ 2022 test.com.ua</div>
+                <div class="footer__policy"><a href="#">Політика конфіденційності</a></div>
+                <div class="footer__copyright">developer_company</div>
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

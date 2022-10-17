@@ -98,12 +98,35 @@
         li {
             border-right: 1px dotted #878992;
             padding: 0 12px;
+            cursor: pointer;
+            position: relative;
             &:last-child {
                 border: none;
+            }
+            // &:hover a{
+            //     color: var(--color-acent);
+            //     border-bottom: 2px solid var(--color-acent);
+            //     padding-bottom: 5px;
+            // }
+            &:hover{
+                &:before {
+                    content: '';
+                    display: block;
+                    width: calc(100% - 24px);
+                    position: absolute;
+                    bottom: -5px;
+                    height: 2px;
+                    background-color: var(--color-acent);
+                    animation: nav_hover .3s linear 1;
+                }
+                a {
+                    color: var(--color-acent);
+                }
             }
             a {
                 color: #fff;
                 text-decoration: none;
+                transition: all .3s;
             }
         }
     }
@@ -119,5 +142,8 @@
             font-weight: 700;
             font-size: 16px;
         }
+    }
+    &__question {
+        font-weight: 300;
     }
 }

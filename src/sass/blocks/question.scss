@@ -1,0 +1,47 @@
+.question {
+    padding: 60px 0 80px 0;
+    background: url('../img/questions_bg.jpg') center / cover no-repeat;
+    &__form {
+        background-color: rgba($color: #e0ddd6, $alpha: .7);
+        padding-bottom: 25px;
+        .orange-btn {
+            margin: 0 auto;
+        }
+    }
+    &__headline {
+        padding: 15px 0;
+        background-color: var(--color-dark-grey);
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        &-title {
+            font-size: 19px;
+            line-height: 19px;
+            font-weight: 700;
+        }
+        &-subtitle {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    &__main {
+        padding: 15px 40px;
+        display: grid;
+        gap: 6px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__input {
+        padding: 15px 25px;
+        border-radius: 50px;
+        border: solid 1px #9da2a8;
+    }
+    &__textarea {
+        display: block;
+        border-radius: 10px;
+        border: solid 1px #9da2a8;
+        padding: 15px 25px;
+        width: 100%;
+        height: 75px;
+        grid-column: 1 / 4;
+    }
+}
